@@ -10,9 +10,9 @@ interface ContactButtonProps {
 
 export function ContactButton({ handleOpenContactModal }: ContactButtonProps) {
   return (
-    <Container>
+    <Container onClick={handleOpenContactModal}>
       <Image src={contact_icon} alt="Contact" width={30} />
-      <button onClick={handleOpenContactModal}>Entre em contato</button>
+      <span>Entre em contato</span>
     </Container>
   );
 }
