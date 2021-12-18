@@ -56,6 +56,6 @@ export const HeroContent = styled.div`
     color: #fff;
     font-size: 1.75rem;
     font-weight: 400;
-    padding-bottom: 1.5rem;
+    padding: 1.5rem 0;
   }
 `;

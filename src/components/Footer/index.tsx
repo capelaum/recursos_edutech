@@ -14,26 +14,31 @@ export function Footer({ handleOpenContactModal }: FooterProps) {
   return (
     <Container>
       <Content>
-        <div>
+        <div className="content_left">
           <Logo />
-          Dúvidas?
-          <ContactButton handleOpenContactModal={handleOpenContactModal} />
+          <div>
+            <span>Dúvidas?</span>
+            <ContactButton handleOpenContactModal={handleOpenContactModal} />
+          </div>
         </div>
 
-        <div>
+        <div className="content_center">
           <Link href="#banner">Início</Link>
           <ContactSocial />
         </div>
 
-        <div>
-          Recursos EduTech © 2021. Feito com 💜 por
-          <a
-            href="https://github.com/capelaum"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Luís Vinicius Capelletto
-          </a>
+        <div className="content_right">
+          Recursos EduTech © 2021.
+          <span>
+            Feito com 💜 por
+            <a
+              href="https://github.com/capelaum"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Luís Vinicius Capelletto
+            </a>
+          </span>
         </div>
       </Content>
     </Container>

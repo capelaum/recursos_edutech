@@ -9,8 +9,6 @@ export const Container = styled.h1`
 
   color: var(--color-secondary);
 
-  padding-bottom: 2rem;
-
   .logo_image {
     padding-right: 0.5rem;
     display: flex;

@@ -14,7 +14,7 @@ interface ButtonProps {
 
 export function Banner({ handleOpenContactModal }: ButtonProps) {
   return (
-    <Container>
+    <Container id="banner">
       <Contact>
         <ContactButton handleOpenContactModal={handleOpenContactModal} />
         <ContactSocial />
