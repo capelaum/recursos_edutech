@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { ContactButton } from "components/ContactButton";
-import { Container, Contact, ContactSocial, Hero } from "./styles";
+import { Container, Contact, ContactSocial, Hero, HeroContent } from "./styles";
 
 import { FaInstagram, FaGithub } from "react-icons/fa";
 
@@ -38,7 +38,7 @@ export function Banner({ handleOpenContactModal }: ButtonProps) {
       </Contact>
 
       <Hero>
-        <div className="hero_content">
+        <HeroContent>
           <h1>
             <div className="logo_image">
               <Image src={logo} alt="Recursos EduTech Logo" />
@@ -47,7 +47,7 @@ export function Banner({ handleOpenContactModal }: ButtonProps) {
           </h1>
           <h2>Encontre os recursos educacionais mais próximos de você</h2>
           <Button text="Criar conta gratuita" />
-        </div>
+        </HeroContent>
         <div id="hero_image">
           <Image src={hero} alt="Recursos EduTech Hero" />
         </div>

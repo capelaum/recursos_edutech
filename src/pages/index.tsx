@@ -6,6 +6,7 @@ import Modal from "react-modal";
 
 import { ContactModal } from "components/ContactModal";
 import { Banner } from "components/Banner";
+import { Informations } from "components/Informations";
 
 Modal.setAppElement("#__next");
 
@@ -27,6 +28,8 @@ const Home: NextPage = () => {
       </Head>
 
       <Banner handleOpenContactModal={handleOpenContactModal} />
+
+      <Informations />
 
       <ContactModal
         isOpen={isContactModalOpen}

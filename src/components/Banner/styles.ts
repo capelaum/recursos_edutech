@@ -48,33 +48,6 @@ export const Hero = styled.section`
   align-items: center;
   justify-content: space-between;
 
-  .hero_content {
-    flex: 50%;
-    padding-right: 1rem;
-
-    h1 {
-      display: flex;
-      align-items: center;
-
-      font-size: 2rem;
-
-      padding-bottom: 1rem;
-
-      .logo_image {
-        padding-right: 0.5rem;
-        display: flex;
-        align-items: center;
-      }
-    }
-
-    h2 {
-      color: #fff;
-      font-size: 1.75rem;
-      font-weight: 400;
-      padding-bottom: 2rem;
-    }
-  }
-
   #hero_image {
     flex: 50%;
 
@@ -82,11 +55,40 @@ export const Hero = styled.section`
       overflow: visible !important;
 
       & > img {
-        top: 18% !important;
+        top: 17% !important;
         inset: none !important;
       }
     }
 
     position: relative;
+  }
+`;
+
+export const HeroContent = styled.div`
+  flex: 50%;
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
+
+  h1 {
+    display: flex;
+    align-items: center;
+
+    font-size: 2rem;
+    font-weight: 700;
+
+    padding-bottom: 2rem;
+
+    .logo_image {
+      padding-right: 0.5rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 400;
+    padding-bottom: 1.5rem;
   }
 `;

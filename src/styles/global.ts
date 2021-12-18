@@ -33,7 +33,7 @@ export const GlobalStyle = createGlobalStyle`
   input,
   textarea,
   button {
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
   }
 
@@ -44,7 +44,7 @@ export const GlobalStyle = createGlobalStyle`
   h5,
   h6,
   strong {
-    font-weight: 600;
+    font-weight: 700;
   }
 
   button {

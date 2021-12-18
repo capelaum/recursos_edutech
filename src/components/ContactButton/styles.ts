@@ -5,6 +5,7 @@ export const Container = styled.button`
   color: var(--color-secondary);
 
   font-size: 1.125rem;
+  font-weight: 500;
 
   transition: all 0.3s;
 
