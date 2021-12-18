@@ -5,6 +5,9 @@ export const Container = styled.footer`
   margin-top: 3rem;
   padding: 1rem 1.25rem 0.5rem 1.25rem;
 
+  display: flex;
+  justify-content: center;
+
   background-color: var(--color-primary);
 `;
 
