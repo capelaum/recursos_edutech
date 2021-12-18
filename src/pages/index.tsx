@@ -7,6 +7,7 @@ import Modal from "react-modal";
 import { ContactModal } from "components/ContactModal";
 import { Banner } from "components/Banner";
 import { Informations } from "components/Informations";
+import { Container } from "styles/home";
 
 Modal.setAppElement("#__next");
 
@@ -28,13 +29,14 @@ const Home: NextPage = () => {
       </Head>
 
       <Banner handleOpenContactModal={handleOpenContactModal} />
+      <Container>
+        <Informations />
 
-      <Informations />
-
-      <ContactModal
-        isOpen={isContactModalOpen}
-        onRequestClose={handleCloseContactModal}
-      />
+        <ContactModal
+          isOpen={isContactModalOpen}
+          onRequestClose={handleCloseContactModal}
+        />
+      </Container>
     </>
   );
 };

@@ -6,7 +6,7 @@ export const Container = styled.h1`
   font-size: 1.75rem;
   font-weight: 600;
 
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 
   &:after {
     content: " ";
