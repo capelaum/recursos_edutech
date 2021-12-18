@@ -1,9 +1,15 @@
 import styled from "styled-components";
 
-export const Container = styled.button`
-  background: var(--color-secondary);
+interface ContainerProps {
+  isBlue?: boolean;
+}
+
+export const Container = styled.button<ContainerProps>`
+  background: ${({ isBlue }) =>
+    isBlue ? "var(--color-primary)" : "var(--color-secondary)"};
+
   color: #fff;
-  padding: 1rem 1.25rem;
+  padding: 1rem 2rem;
 
   font-size: 1.25rem;
   font-weight: 500;

@@ -9,6 +9,8 @@ export const Container = styled.section`
   align-items: center;
 
   margin-top: 3.75rem;
+
+  padding: 0 2rem;
 `;
 
 export const GridContainer = styled.div`
@@ -16,6 +18,4 @@ export const GridContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1.25rem;
-
-  padding: 0 1.25rem;
 `;

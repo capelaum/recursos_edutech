@@ -7,6 +7,7 @@ import Modal from "react-modal";
 import { Banner } from "components/Banner";
 import { ContactModal } from "components/ContactModal";
 import { GridSection } from "components/GridSection";
+import { AidSection } from "components/AidSection";
 
 import { informations } from "data/informations";
 import { resources } from "data/resources";
@@ -34,13 +35,15 @@ const Home: NextPage = () => {
 
       <Banner handleOpenContactModal={handleOpenContactModal} />
       <Container>
-        <GridSection data={informations} sectionTitle="Como funciona" />
-        <GridSection data={resources} sectionTitle="Recursos" />
-
         <ContactModal
           isOpen={isContactModalOpen}
           onRequestClose={handleCloseContactModal}
         />
+
+        <GridSection data={informations} sectionTitle="Como funciona" />
+        <GridSection data={resources} sectionTitle="Recursos" />
+
+        <AidSection />
       </Container>
     </>
   );
