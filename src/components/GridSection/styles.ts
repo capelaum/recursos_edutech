@@ -8,7 +8,7 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
 
-  margin: 3.75rem 0;
+  margin-top: 3.75rem;
 `;
 
 export const GridContainer = styled.div`

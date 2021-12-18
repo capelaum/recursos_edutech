@@ -9,6 +9,7 @@ import { ContactModal } from "components/ContactModal";
 import { GridSection } from "components/GridSection";
 
 import { informations } from "data/informations";
+import { resources } from "data/resources";
 
 import { Container } from "styles/home";
 
@@ -34,7 +35,7 @@ const Home: NextPage = () => {
       <Banner handleOpenContactModal={handleOpenContactModal} />
       <Container>
         <GridSection data={informations} sectionTitle="Como funciona" />
-        <GridSection data={informations} sectionTitle="Como funciona" />
+        <GridSection data={resources} sectionTitle="Recursos" />
 
         <ContactModal
           isOpen={isContactModalOpen}
