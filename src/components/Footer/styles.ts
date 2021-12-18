@@ -60,6 +60,12 @@ export const Content = styled.footer`
         padding: 0 0.2rem;
         color: #fff;
         text-decoration: none;
+
+        transition: all 0.3s;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

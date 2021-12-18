@@ -60,4 +60,9 @@ export const Container = styled.form`
     color: #fff;
     background-color: var(--color-secondary);
   }
+
+  button {
+    width: 100%;
+    margin-top: 1rem;
+  }
 `;
