@@ -3,6 +3,7 @@ import Modal from "react-modal";
 import { MdClose } from "react-icons/md";
 
 import { Container } from "./styles";
+import { Button } from "components/Button";
 
 interface ContactModalProps {
   isOpen: boolean;
@@ -63,7 +64,7 @@ export function ContactModal({ isOpen, onRequestClose }: ContactModalProps) {
 
         <textarea name="message" id="message" placeholder="Mensagem" />
 
-        <button type="submit">Enviar</button>
+        <Button text="Enviar" />
       </Container>
     </Modal>
   );
