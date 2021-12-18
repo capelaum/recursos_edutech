@@ -8,6 +8,7 @@ export const Container = styled.div`
   padding: 1.25rem;
 
   color: var(--color-primary);
+  background-color: #fff;
 
   border-radius: 20px;
   border: 2px solid var(--color-primary);

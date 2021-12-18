@@ -4,9 +4,12 @@ import Head from "next/head";
 
 import Modal from "react-modal";
 
-import { ContactModal } from "components/ContactModal";
 import { Banner } from "components/Banner";
-import { Informations } from "components/Informations";
+import { ContactModal } from "components/ContactModal";
+import { GridSection } from "components/GridSection";
+
+import { informations } from "data/informations";
+
 import { Container } from "styles/home";
 
 Modal.setAppElement("#__next");
@@ -30,7 +33,8 @@ const Home: NextPage = () => {
 
       <Banner handleOpenContactModal={handleOpenContactModal} />
       <Container>
-        <Informations />
+        <GridSection data={informations} sectionTitle="Como funciona" />
+        <GridSection data={informations} sectionTitle="Como funciona" />
 
         <ContactModal
           isOpen={isContactModalOpen}
