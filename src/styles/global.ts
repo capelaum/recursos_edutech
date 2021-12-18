@@ -85,7 +85,7 @@ export const GlobalStyle = createGlobalStyle`
 
   .react-modal-content {
     width: 100%;
-    padding: 3rem;
+    padding: 2.5rem;
     margin: 1.25rem;
     position: relative;
     border-radius: 20px;
@@ -107,10 +107,11 @@ export const GlobalStyle = createGlobalStyle`
     border: 0;
     background: transparent;
 
-    color: #000;
-      transition: filter 0.3s;
-      &:hover {
-        color: var(--color-secondary);
-      }
+    color: #fff;
+    transition: all 0.3s;
+
+    &:hover {
+      color: var(--color-secondary);
+    }
   }
 `;
