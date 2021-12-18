@@ -1,12 +1,29 @@
-import Image from "next/image";
-
-import { SectionTitle } from "components/SectionTitle";
-
 import info_1 from "@public/info/info_1.svg";
 import info_2 from "@public/info/info_2.svg";
 import info_3 from "@public/info/info_3.svg";
 
-import { Container, GridContainer, GridItem } from "./styles";
+import { SectionTitle } from "components/SectionTitle";
+import { GridItem } from "components/GridItem";
+
+import { Container, GridContainer } from "./styles";
+
+const informations = [
+  {
+    image: info_1,
+    text: "Ao criar uma conta, você pode especificar diversos recursos dos quais precisa, incluindo livros, cursos, instrumentos, notebooks, acesso à internet, coworkings e afins.",
+    alt: "Recursos",
+  },
+  {
+    image: info_2,
+    text: "Baseado em sua localização, identificaremos os lugares mais próximos que disponibilizam os recursos que você precisa para estudar.",
+    alt: "Localização",
+  },
+  {
+    image: info_3,
+    text: "Podem ser encontradas diversas instituições de educação em sua região, incluindo instituições públicas, privadas e até professores particulares de sua região.",
+    alt: "Educação",
+  },
+];
 
 export function Informations() {
   return (
@@ -14,35 +31,14 @@ export function Informations() {
       <SectionTitle title="Como funciona" />
 
       <GridContainer>
-        <GridItem>
-          <div className="info_image">
-            <Image src={info_1} alt="Recursos" layout="fixed" height={80} />
-          </div>
-          <p>
-            Ao criar uma conta, você pode especificar diversos recursos dos
-            quais precisa, incluindo livros, cursos, instrumentos, notebooks,
-            acesso à internet, coworkings e afins.
-          </p>
-        </GridItem>
-        <GridItem>
-          <div className="info_image">
-            <Image src={info_2} alt="Localização" layout="fixed" height={80} />
-          </div>
-          <p>
-            Baseado em sua localização, identificaremos os lugares mais próximos
-            que disponibilizam os recursos que você precisa para estudar.
-          </p>
-        </GridItem>
-        <GridItem>
-          <div className="info_image">
-            <Image src={info_3} alt="Educação" layout="fixed" height={80} />
-          </div>
-          <p>
-            Podem ser encontradas diversas instituições de educação em sua
-            região, incluindo instituições públicas, privadas e até professores
-            particulares de sua região.
-          </p>
-        </GridItem>
+        {informations.map(({ image, text, alt }, index) => (
+          <GridItem
+            key={`${alt}-${index}`}
+            image={image}
+            text={text}
+            alt={alt}
+          />
+        ))}
       </GridContainer>
     </Container>
   );
