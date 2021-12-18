@@ -7,7 +7,7 @@ export const Container = styled.section`
   justify-content: center;
 
   margin-top: 3.75rem;
-  padding: 2rem;
+  padding: 3rem 2rem;
 
   background-color: var(--color-secondary);
   color: #fff;

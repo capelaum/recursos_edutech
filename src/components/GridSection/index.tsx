@@ -7,24 +7,28 @@ import { Container, GridContainer } from "./styles";
 
 interface GridSectionProps {
   sectionTitle: string;
-  data: Data[];
+  data?: Data[];
 }
 
 export function GridSection({ data, sectionTitle }: GridSectionProps) {
+  function renderData(data: Data[]) {
+    return data.map(({ image, text, alt, title, isPartner }, index) => (
+      <GridItem
+        key={`${alt}-${index}`}
+        image={image}
+        text={text}
+        alt={alt}
+        title={title}
+        isPartner={isPartner}
+      />
+    ));
+  }
+
   return (
     <Container>
       <SectionTitle title={sectionTitle} />
 
-      <GridContainer>
-        {data.map(({ image, text, alt }, index) => (
-          <GridItem
-            key={`${alt}-${index}`}
-            image={image}
-            text={text}
-            alt={alt}
-          />
-        ))}
-      </GridContainer>
+      <GridContainer>{data ? renderData(data) : null}</GridContainer>
     </Container>
   );
 }

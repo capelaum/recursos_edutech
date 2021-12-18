@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+interface ContainerProps {
+  isPartner?: boolean;
+}
+
+export const Container = styled.div<ContainerProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,12 +15,15 @@ export const Container = styled.div`
   background-color: #fff;
 
   border-radius: 20px;
-  border: 2px solid var(--color-primary);
+  border: ${({ isPartner }) =>
+    isPartner ? "none" : "2px solid var(--color-primary)"};
 
   transition: all 0.3s;
 
   .info_image {
     padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
   }
 
   p {
@@ -26,7 +33,9 @@ export const Container = styled.div`
   }
 
   &:hover {
-    background: var(--color-primary);
-    color: #fff;
+    background: ${({ isPartner }) =>
+      isPartner ? "none" : "var(--color-primary)"};
+
+    color: ${({ isPartner }) => (isPartner ? "var(--color-primary)" : "#fff")};
   }
 `;

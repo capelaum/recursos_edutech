@@ -11,6 +11,7 @@ import { AidSection } from "components/AidSection";
 
 import { informations } from "data/informations";
 import { resources } from "data/resources";
+import { partners } from "data/partners";
 
 import { Container } from "styles/home";
 
@@ -44,6 +45,7 @@ const Home: NextPage = () => {
         <GridSection data={resources} sectionTitle="Recursos" />
 
         <AidSection />
+        <GridSection data={partners} sectionTitle="Parceiros" />
       </Container>
     </>
   );
