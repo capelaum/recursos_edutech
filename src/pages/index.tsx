@@ -4,14 +4,15 @@ import Head from "next/head";
 
 import Modal from "react-modal";
 
+import { informations } from "data/informations";
+import { resources } from "data/resources";
+import { partners } from "data/partners";
+
 import { Banner } from "components/Banner";
 import { ContactModal } from "components/ContactModal";
 import { GridSection } from "components/GridSection";
 import { AidSection } from "components/AidSection";
-
-import { informations } from "data/informations";
-import { resources } from "data/resources";
-import { partners } from "data/partners";
+import { Footer } from "components/Footer";
 
 import { Container } from "styles/home";
 
@@ -46,6 +47,8 @@ const Home: NextPage = () => {
 
         <AidSection />
         <GridSection data={partners} sectionTitle="Parceiros" />
+
+        <Footer handleOpenContactModal={handleOpenContactModal} />
       </Container>
     </>
   );

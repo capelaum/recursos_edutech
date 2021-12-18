@@ -5,7 +5,7 @@ import { GlobalStyle } from "../styles/global";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
       <GlobalStyle />
     </>
   );
