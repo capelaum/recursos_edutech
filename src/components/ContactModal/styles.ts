@@ -47,7 +47,7 @@ export const Container = styled.form`
     }
 
     &::placeholder {
-      color: var(--color-background);
+      color: var(--color-gray-700);
     }
   }
 

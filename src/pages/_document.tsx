@@ -43,8 +43,9 @@ export default class MyDocument extends Document {
             content="Recursos EduTech - Facilitando o acesso a recursos educacionais para quem precisa."
           />
           <meta property="og:title" content="Recursos EduTech" />
-          <meta property="og:type" content="web app" />
-          <meta property="og:image" content="logo.svg" />
+          <meta property="og:site_name" content="Recursos EduTech"></meta>
+          <meta property="og:type" content="website" />
+          <meta property="og:image" itemProp="image" content="logo.png" />
           <meta
             property="og:url"
             content="https://recursos-edutech.vercel.app"
