@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="pt-BR">
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
@@ -37,6 +37,22 @@ export default class MyDocument extends Document {
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
+
+          <meta
+            name="description"
+            content="Recursos EduTech - Facilitando o acesso a recursos educacionais para quem precisa."
+          />
+          <meta property="og:title" content="Recursos EduTech" />
+          <meta property="og:type" content="web app" />
+          <meta property="og:image" content="logo.svg" />
+          <meta
+            property="og:url"
+            content="https://recursos-edutech.vercel.app"
+          />
+          <meta
+            property="og:description"
+            content="Recursos EduTech - Facilitando o acesso a recursos educacionais para quem precisa."
+          />
         </Head>
         <body>
           <Main />
