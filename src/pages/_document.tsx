@@ -45,15 +45,19 @@ export default class MyDocument extends Document {
           <meta property="og:title" content="Recursos EduTech" />
           <meta property="og:site_name" content="Recursos EduTech"></meta>
           <meta property="og:type" content="website" />
-          <meta property="og:image" itemProp="image" content="logo.png" />
-          <meta
-            property="og:url"
-            content="https://recursos-edutech.vercel.app"
-          />
           <meta
             property="og:description"
             content="Recursos EduTech - Facilitando o acesso a recursos educacionais para quem precisa."
           />
+          <meta
+            property="og:url"
+            content="https://recursos-edutech.vercel.app"
+          />
+
+          <meta property="og:image" itemProp="image" content="logo.png" />
+          <meta property="og:image:type" content="image/png"></meta>
+          <meta property="og:image:width" content="300" />
+          <meta property="og:image:height" content="300" />
         </Head>
         <body>
           <Main />
