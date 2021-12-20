@@ -25,6 +25,7 @@ Instale as dependências do projeto executanto o comando `yarn` ou `npm install`
 - [react-icons][react_icons]
 - [react-modal][react_modal]
 - [react-textarea-autosize][react_textarea]
+- [react-loader-spinner][react_loader]
 
 [next]: https://nextjs.org
 [typescript]: https://www.typescriptlang.org
@@ -34,3 +35,4 @@ Instale as dependências do projeto executanto o comando `yarn` ou `npm install`
 [react_textarea]: https://www.npmjs.com/package/react-textarea-autosize
 [rocketseat]: https://www.rocketseat.com.br
 [desafio]: https://efficient-sloth-d85.notion.site/Instru-es-dos-desafios-f2f2c5574cf640c59de425413f60c8eb
+[react_loader]: https://www.npmjs.com/package/react-loader-spinner

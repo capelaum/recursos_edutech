@@ -5,6 +5,7 @@ import { MdClose } from "react-icons/md";
 
 import { Container } from "./styles";
 import { Button } from "components/Button";
+import { CepInput } from "components/CepInput";
 
 interface ContactModalProps {
   isOpen: boolean;
@@ -49,9 +50,7 @@ export function ContactModal({ isOpen, onRequestClose }: ContactModalProps) {
           />
         </label>
 
-        <label htmlFor="CEP">
-          <input type="text" name="CEP" id="CEP" placeholder="CEP" required />
-        </label>
+        <CepInput />
 
         <label htmlFor="subject">
           <input

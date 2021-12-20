@@ -14,17 +14,11 @@ export function AidSection() {
           <h1>Auxílio Educacional</h1>
           <p>
             Declare-se como uma pessoa de baixa renda e tenha a possibilidade de
-            receber auxílio de nossos parceiros e colaboradores, bastando
-            informar seus dados e comprovar sua situação através do envio de
-            documentos pelo nosso formulário.
+            receber auxílio de nossos parceiros e colaboradores, basta informar
+            seus dados e comprovar sua situação através do envio de documentos
+            pelo nosso formulário.
           </p>
-          {/* <p>
-            Assim que recebermos seus dados, avaliaremos o seu caso e entraremos
-            em contato o mais breve possível com a possibilidade de lhe oferecer
-            diversos auxílios, variando desde a disponibilização de bolsas de
-            estudos em cursos de nossos parceiros, fornecimento de equipamentos
-            e até disponibilizar aulas gratuitas de professores particulares!
-          </p> */}
+
           <Button text="Peça seu auxílio" isBlue />
         </ContentText>
 
