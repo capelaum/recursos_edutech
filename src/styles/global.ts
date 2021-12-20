@@ -20,8 +20,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   :root {
-    --color-primary: #2C2252;
-    --color-secondary: #F44C9D;
+    --color-primary: #0E1D47;
+    --color-secondary: #F037A5;
     --color-background: #f5f5f5;
     --color-gray-200: #c1c8cc;
     --color-gray-400: #c1bccc;

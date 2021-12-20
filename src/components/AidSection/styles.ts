@@ -7,7 +7,7 @@ export const Container = styled.section`
   justify-content: center;
 
   margin-top: 3.75rem;
-  padding: 3rem 2rem;
+  padding: 1.25rem 2rem;
 
   background-color: var(--color-secondary);
   color: #fff;
@@ -26,6 +26,14 @@ export const Content = styled.div`
 
     margin-left: 2.5rem;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .aid_image {
+      margin-left: 0;
+    }
+  }
 `;
 
 export const ContentText = styled.div`
@@ -43,5 +51,20 @@ export const ContentText = styled.div`
   p {
     font-size: 1.25rem;
     padding-bottom: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    align-items: center;
+    padding-bottom: 1.25rem;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
   }
 `;

@@ -45,6 +45,10 @@ export const Hero = styled.section`
 
     position: relative;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const HeroContent = styled.div`
@@ -57,5 +61,21 @@ export const HeroContent = styled.div`
     font-size: 1.75rem;
     font-weight: 400;
     padding: 1.5rem 0;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+    padding-right: 0;
+
+    h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 2rem 0;
+    }
   }
 `;

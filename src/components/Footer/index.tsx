@@ -4,7 +4,13 @@ import { Logo } from "components/Logo";
 import { ContactSocial } from "components/ContactSocial";
 import { ContactButton } from "components/ContactButton";
 
-import { Container, Content } from "./styles";
+import {
+  Container,
+  Content,
+  ContentCenter,
+  ContentLeft,
+  ContentRight,
+} from "./styles";
 
 interface FooterProps {
   handleOpenContactModal: () => void;
@@ -14,20 +20,20 @@ export function Footer({ handleOpenContactModal }: FooterProps) {
   return (
     <Container>
       <Content>
-        <div className="content_left">
+        <ContentLeft>
           <Logo />
           <div>
             <span>Dúvidas?</span>
             <ContactButton handleOpenContactModal={handleOpenContactModal} />
           </div>
-        </div>
+        </ContentLeft>
 
-        <div className="content_center">
+        <ContentCenter>
           <Link href="#banner">Início</Link>
           <ContactSocial />
-        </div>
+        </ContentCenter>
 
-        <div className="content_right">
+        <ContentRight>
           Recursos EduTech © 2021.
           <span>
             Feito com 💜 por
@@ -39,7 +45,7 @@ export function Footer({ handleOpenContactModal }: FooterProps) {
               Luís Vinicius Capelletto
             </a>
           </span>
-        </div>
+        </ContentRight>
       </Content>
     </Container>
   );

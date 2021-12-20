@@ -14,4 +14,8 @@ export const Container = styled.h1`
     display: flex;
     align-items: center;
   }
+
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+  }
 `;
