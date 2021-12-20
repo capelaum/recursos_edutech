@@ -1,4 +1,5 @@
 import Modal from "react-modal";
+import TextareaAutosize from "react-textarea-autosize";
 
 import { MdClose } from "react-icons/md";
 
@@ -62,7 +63,13 @@ export function ContactModal({ isOpen, onRequestClose }: ContactModalProps) {
           />
         </label>
 
-        <textarea name="message" id="message" placeholder="Mensagem" />
+        <TextareaAutosize
+          name="message"
+          id="message"
+          placeholder="Mensagem"
+          maxRows={10}
+          minRows={5}
+        />
 
         <Button text="Enviar" />
       </Container>
