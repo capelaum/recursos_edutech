@@ -3,5 +3,4 @@ export type Data = {
   title?: string;
   text: string;
   alt: string;
-  isPartner?: boolean;
 };

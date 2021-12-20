@@ -12,14 +12,13 @@ interface GridSectionProps {
 
 export function GridSection({ data, sectionTitle }: GridSectionProps) {
   function renderData(data: Data[]) {
-    return data.map(({ image, text, alt, title, isPartner }, index) => (
+    return data.map(({ image, text, alt, title }, index) => (
       <GridItem
         key={`${alt}-${index}`}
         image={image}
         text={text}
         alt={alt}
         title={title}
-        isPartner={isPartner}
       />
     ));
   }

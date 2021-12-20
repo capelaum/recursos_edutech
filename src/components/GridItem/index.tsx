@@ -7,19 +7,12 @@ interface GridItemProps {
   text: string;
   alt: string;
   title?: string;
-  isPartner?: boolean;
 }
 
-export function GridItem({
-  image,
-  text,
-  alt,
-  title,
-  isPartner,
-}: GridItemProps) {
+export function GridItem({ image, text, alt, title }: GridItemProps) {
   return (
-    <Container isPartner={isPartner}>
-      <div className="info_image">
+    <Container>
+      <div className="grid_item_image">
         <Image src={image} alt={alt} layout="fixed" height={80} />
         <h2>{title}</h2>
       </div>
