@@ -1,11 +1,14 @@
+import { FormEvent } from "react";
 import Modal from "react-modal";
 import TextareaAutosize from "react-textarea-autosize";
+import { toast } from "react-toastify";
 
 import { MdClose } from "react-icons/md";
 
-import { Container } from "./styles";
 import { Button } from "components/Button";
 import { CepInput } from "components/CepInput";
+
+import { Container } from "./styles";
 
 interface ContactModalProps {
   isOpen: boolean;
@@ -13,6 +16,17 @@ interface ContactModalProps {
 }
 
 export function ContactModal({ isOpen, onRequestClose }: ContactModalProps) {
+  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+
+    toast.success("Contato enviado com sucesso!", {
+      position: "top-right",
+      theme: "colored",
+    });
+
+    onRequestClose();
+  }
+
   return (
     <Modal
       isOpen={isOpen}
@@ -27,7 +41,7 @@ export function ContactModal({ isOpen, onRequestClose }: ContactModalProps) {
       >
         <MdClose size={24} className="react-modal-close-checkout" />
       </button>
-      <Container>
+      <Container onSubmit={e => handleSubmit(e)}>
         <h1>Contato</h1>
 
         <label htmlFor="name">
@@ -68,9 +82,10 @@ export function ContactModal({ isOpen, onRequestClose }: ContactModalProps) {
           placeholder="Mensagem*"
           maxRows={10}
           minRows={5}
+          required
         />
 
-        <Button text="Enviar" />
+        <Button type="submit" text="Enviar" />
       </Container>
     </Modal>
   );

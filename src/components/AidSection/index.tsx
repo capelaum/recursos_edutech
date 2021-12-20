@@ -19,7 +19,7 @@ export function AidSection() {
             pelo nosso formulário.
           </p>
 
-          <Button text="Peça seu auxílio" isBlue />
+          <Button type="button" text="Peça seu auxílio" isBlue />
         </ContentText>
 
         <div className="aid_image">

@@ -1,4 +1,5 @@
 import { ChangeEvent, FormEvent, useState } from "react";
+import { toast } from "react-toastify";
 import Loader from "react-loader-spinner";
 
 import { getCepData } from "services/viaCep";
@@ -29,7 +30,13 @@ export function CepInput() {
   }
 
   function showSearchError(message: string) {
-    alert(message);
+    toast.error(message, {
+      position: "top-right",
+      theme: "colored",
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+    });
     setLoading(false);
     setCepData(null);
     return;
@@ -38,23 +45,27 @@ export function CepInput() {
   async function handleSearchCep() {
     setLoading(true);
 
-    if (!cep) {
-      showSearchError("CEP não informado.");
+    try {
+      if (!cep) {
+        throw new Error("CEP não informado.");
+      }
+
+      if (cep.length !== 9) {
+        throw new Error("CEP inválido.");
+      }
+
+      const cepFomated = cep.replace("-", "");
+      const cepData = await getCepData(cepFomated);
+      setLoading(false);
+
+      if (!cepData) {
+        throw new Error("CEP inválido.");
+      }
+
+      setCepData(cepData);
+    } catch (error: any) {
+      showSearchError(error.message);
     }
-
-    if (cep.length !== 9) {
-      showSearchError("CEP inválido.");
-    }
-
-    const cepFomated = cep.replace("-", "");
-    const cepData = await getCepData(cepFomated);
-    setLoading(false);
-
-    if (!cepData) {
-      showSearchError("CEP inválido.");
-    }
-
-    setCepData(cepData);
   }
 
   function renderCepData(cepData: CepData | null) {

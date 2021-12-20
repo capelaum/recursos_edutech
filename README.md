@@ -3,6 +3,11 @@
     <img src=".github/logo.svg" alt="Logo">
     Recursos EduTech
   </h1>
+  <h2>
+    <a href="https://recursos-edutech.vercel.app" target="_blank" rel="noreferrer">
+      Link: https://recursos-edutech.vercel.app
+    </a>
+  </h2>
   <p>
     Landing page de uma solução baseada em identificar, encontrar e fornecer recursos educacionais para pessoas que não possuem acesso a recursos educacionais, mas com vontade de aprender. Voltado para solucionar o problema de acesso à educação presente no Brasil.
   </p>
@@ -13,7 +18,7 @@
 
 Este projeto foi desenvolvido como um desafio de React.js proposto pela [Rocketseat][rocketseat] no evento DoWhile de 2021, para mais informações acesse: [Desafios DoWhile][desafio]
 
-## Executando localmente
+## Rodando localmente
 
 Instale as dependências do projeto executanto o comando `yarn` ou `npm install` na raiz do projeto e em seguida execute em modo de desenvolvimento com o comando `yarn dev` ou `npm run dev`. Após isso a aplicação estará rodando na porta 3000 em http://localhost:3000
 
@@ -26,6 +31,7 @@ Instale as dependências do projeto executanto o comando `yarn` ou `npm install`
 - [react-modal][react_modal]
 - [react-textarea-autosize][react_textarea]
 - [react-loader-spinner][react_loader]
+- [react-toastify][react_toastify]
 
 [next]: https://nextjs.org
 [typescript]: https://www.typescriptlang.org
@@ -36,3 +42,4 @@ Instale as dependências do projeto executanto o comando `yarn` ou `npm install`
 [rocketseat]: https://www.rocketseat.com.br
 [desafio]: https://efficient-sloth-d85.notion.site/Instru-es-dos-desafios-f2f2c5574cf640c59de425413f60c8eb
 [react_loader]: https://www.npmjs.com/package/react-loader-spinner
+[react_toastify]: https://fkhadra.github.io/react-toastify/introduction

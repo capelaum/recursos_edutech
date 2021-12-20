@@ -24,7 +24,7 @@ export function Banner({ handleOpenContactModal }: ButtonProps) {
         <HeroContent>
           <Logo />
           <h2>Encontre os recursos educacionais mais próximos de você</h2>
-          <Button text="Criar conta gratuita" />
+          <Button text="Criar conta gratuita" type="button" />
         </HeroContent>
         <div id="hero_image">
           <Image src={hero} alt="Recursos EduTech Hero" />
