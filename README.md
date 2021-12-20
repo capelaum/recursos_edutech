@@ -14,9 +14,9 @@
 - [Next.js][next]
 - [Typescript][typescript]
 - [Styled-components][styled]
-- [React-icons][react_icons]
-- [React-modal][react_modal]
-- [React-textarea-autosize][react_textarea]
+- [react-icons][react_icons]
+- [react-modal][react_modal]
+- [react-textarea-autosize][react_textarea]
 
 [next]: https://nextjs.org
 [typescript]: https://www.typescriptlang.org

@@ -34,7 +34,7 @@ export function ContactModal({ isOpen, onRequestClose }: ContactModalProps) {
             type="text"
             name="name"
             id="name"
-            placeholder="Nome"
+            placeholder="Nome*"
             required
           />
         </label>
@@ -44,7 +44,7 @@ export function ContactModal({ isOpen, onRequestClose }: ContactModalProps) {
             type="email"
             name="email"
             id="email"
-            placeholder="E-mail"
+            placeholder="E-mail*"
             required
           />
         </label>
@@ -58,7 +58,7 @@ export function ContactModal({ isOpen, onRequestClose }: ContactModalProps) {
             type="text"
             name="subject"
             id="subject"
-            placeholder="Assunto"
+            placeholder="Assunto*"
             required
           />
         </label>
@@ -66,7 +66,7 @@ export function ContactModal({ isOpen, onRequestClose }: ContactModalProps) {
         <TextareaAutosize
           name="message"
           id="message"
-          placeholder="Mensagem"
+          placeholder="Mensagem*"
           maxRows={10}
           minRows={5}
         />
