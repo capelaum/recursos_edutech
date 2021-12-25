@@ -3,9 +3,9 @@
     <img src=".github/logo.svg" alt="Logo">
     Recursos EduTech
   </h1>
-  <h2>
+  <h2>Link:
     <a href="https://recursos-edutech.vercel.app" target="_blank" rel="noreferrer">
-      Link: https://recursos-edutech.vercel.app
+      https://recursos-edutech.vercel.app
     </a>
   </h2>
   <p>
